@@ -11,7 +11,7 @@ int main() {
     printf("Desafio Super Trunfo!\n");
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
+
     //Nivel Novato
     char estado[50];
     char cidade [50];
@@ -25,11 +25,10 @@ int main() {
     float densidadeP;
     float pibCapita;
 
-
     // Cadastro das Cartas:
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
     // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
+
     //Nivel Novato
     printf("Digite o código do Estado: \n");
     scanf("%s", &estado);
@@ -50,12 +49,10 @@ int main() {
     densidadeP = populacao / area;
     pibCapita = pib / populacao;
 
-
-
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
-    
+
     //Nivel Novato
     printf("Código do Estado: %s\n", estado);
     printf("Código da Cidade: %s\n", cidade);
@@ -67,12 +64,9 @@ int main() {
     printf("PIB per Capita: R$ %.2f\n", pibCapita);
     printf("Pontos Túristicos: %d Locais\n", pontosT);
 
-    //Nivel Aventureiro
-    /*
+    /* Nivel Aventureiro
     printf("Densidade Populacional: %.2f hab/Km²\n", densidadeP);
     printf("PIB per Capita: R$ %.2f\n", pibCapita);
     */
-
-
     return 0;
 }
