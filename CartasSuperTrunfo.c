@@ -100,6 +100,36 @@ int main() {
     printf("PIB per Capita: R$ %.2f\n", pibCapita);
     */
 
+
+    printf("Comparação de Cartas (Populção)\n");
+    printf("Carta, %s%s - %s: %d\n", estado, cidade, nome, populacao);
+    printf("Carta, %s%s - %s: %d\n", estado1, cidade1, nome1, populacao1);
+
+    if(populacao > populacao1){
+        
+        printf("Carta, %s%s Venceu!!\n", estado, cidade);
+    } else{
+        printf("Carta, %s%s Venceu!!\n\n", estado1, cidade1);
+    }
+
+
+    printf("Comparação de Cartas (Área)\n");
+    printf("Carta, %s%s - %s: %.2f Km²\n", estado, cidade, nome, area);
+    printf("Carta, %s%s - %s: %.2f Km²\n", estado1, cidade1, nome1, area1);
+
+    if(area > area1){
+        
+        printf("Carta, %s%s Venceu!!\n", estado, cidade);
+    } else{
+        printf("Carta, %s%s Venceu!!\n\n", estado1, cidade1);
+    }
+
+
+    printf("Comparação de Cartas (Densidade Populacional)\n");
+    printf("Carta, %s%s - %s: %.2f hab/Km²\n", estado, cidade, nome, densidadeP);
+    printf("Carta, %s%s - %s: %.2f hab/Km²\n", estado1, cidade1, nome1, densidadeP1);
+
+
     if(densidadeP < densidadeP1){
         
         printf("Carta, %s%s Venceu!!\n", estado, cidade);
