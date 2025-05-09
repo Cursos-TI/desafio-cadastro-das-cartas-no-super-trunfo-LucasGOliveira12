@@ -13,17 +13,17 @@ int main() {
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
 
     //Nivel Novato
-    char estado[50];
-    char cidade [50];
-    char nome[50];
-    int populacao;
-    float area;
-    float pib;
-    int pontosT;
+    char estado[50], estado1[50];
+    char cidade[50], cidade1[50];
+    char nome[50], nome1[50];
+    int populacao, populacao1;
+    float area, area1;
+    float pib, pib1;
+    int pontosT, pontosT1;
 
     //Nivel Aventureiro
-    float densidadeP;
-    float pibCapita;
+    float densidadeP, densidadeP1;
+    float pibCapita, pibCapita1;
 
     // Cadastro das Cartas:
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
@@ -45,9 +45,29 @@ int main() {
     printf("Número de pontos turísticos da Cidade: \n");
     scanf("%d", &pontosT);
 
+
+    printf("Digite o código de outro Estado: \n");
+    scanf("%s", &estado1);
+    printf("Digite o código de outra Cidade: \n");
+    scanf("%s", &cidade1);
+    printf("Nome da Cidade: \n");
+    scanf("%s", &nome1);
+    printf("População da Cidade: \n");
+    scanf("%d", &populacao1);
+    printf("Área da Cidade: \n");
+    scanf("%f", &area1);
+    printf("PIB da Cidade: \n");
+    scanf("%f", &pib1);
+    printf("Número de pontos turísticos da Cidade: \n");
+    scanf("%d", &pontosT1);
+
     //Nivel Aventureiro
     densidadeP = populacao / area;
     pibCapita = pib / populacao;
+
+
+    densidadeP1 = populacao1 / area1;
+    pibCapita1 = pib1 / populacao1;
 
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
@@ -62,11 +82,31 @@ int main() {
     printf("Densidade Populacional: %.2f hab/Km²\n", densidadeP);
     printf("PIB: R$ %.2f\n", pib);
     printf("PIB per Capita: R$ %.2f\n", pibCapita);
-    printf("Pontos Túristicos: %d Locais\n", pontosT);
+    printf("Pontos Túristicos: %d Locais\n\n", pontosT);
+
+
+    printf("Código do Estado: %s\n", estado1);
+    printf("Código da Cidade: %s\n", cidade1);
+    printf("Nome: %s\n", nome1);
+    printf("Populção: %d\n", populacao1);
+    printf("Área: %.2f Km²\n", area1);
+    printf("Densidade Populacional: %.2f hab/Km²\n", densidadeP1);
+    printf("PIB: R$ %.2f\n", pib1);
+    printf("PIB per Capita: R$ %.2f\n", pibCapita1);
+    printf("Pontos Túristicos: %d Locais\n\n", pontosT1);
 
     /* Nivel Aventureiro
     printf("Densidade Populacional: %.2f hab/Km²\n", densidadeP);
     printf("PIB per Capita: R$ %.2f\n", pibCapita);
     */
+
+    if(densidadeP < densidadeP1){
+        
+        printf("Carta, %s%s Venceu!!\n", estado, cidade);
+    } else{
+        printf("Carta, %s%s Venceu!!\n", estado1, cidade1);
+    }
+
+
     return 0;
 }
